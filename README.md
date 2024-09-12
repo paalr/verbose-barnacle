@@ -4,7 +4,7 @@ This script automates the setup process for training a Flux LoRA using SimpleTun
 
 ## Credits
 
-This setup script is based on the guide "[Training a Flux LoRA using SimpleTuner on RunPod or Locally](https://civitai.com/articles/6678/training-a-flux-lora-using-simpletuner-on-runpod-or-locally)" by Aitrepreneur. We highly recommend reading the original guide for a deeper understanding of the process.
+This setup script is based on the guide "[Training a Flux LoRA using SimpleTuner on RunPod or Locally](https://civitai.com/articles/6678/training-a-flux-lora-using-simpletuner-on-runpod-or-locally)" by Aitrepreneur. I highly recommend reading the original guide for a deeper understanding of the process.
 
 ## Quick Start
 
@@ -13,7 +13,7 @@ This setup script is based on the guide "[Training a Flux LoRA using SimpleTuner
 3. Run the following commands:
 
 ```bash
-wget https://raw.githubusercontent.com/yourusername/yourrepo/main/setup_simpletuner.sh
+wget https://raw.githubusercontent.com/paalr/verbose-barnacle/main/setup_simpletuner.sh
 chmod +x setup_simpletuner.sh
 ./setup_simpletuner.sh
 ```
