@@ -37,12 +37,15 @@ wget -O config/multidatabackend.json https://raw.githubusercontent.com/paalr/ver
 # Replace placeholder with actual trigger word and calculated steps
 sed -i "s/m0del/$trigger/g" config/config.env
 sed -i "s/m0del/$trigger/g" config/multidatabackend.json
-sed -i "s/max_train_steps=.*/max_train_steps=$recommended_steps/" config/config.env
+sed -i "s/MAX_NUM_STEPS=.*/MAX_NUM_STEPS=$recommended_steps/" config/config.env
 
 # Set up HuggingFace CLI
-pip install -U "huggingface_hub[cli]"
+#pip install -U "huggingface_hub[cli]"
 echo "Please run 'huggingface-cli login' and enter your token when prompted."
 
 echo "Setup complete. Please upload your dataset to the datasets/$trigger folder."
 echo "The recommended number of training steps ($recommended_steps) has been set in the config file."
-echo "Then run 'bash train.sh' to start training."
+echo "To start training, run the following commands:"
+echo "cd /workspace/SimpleTuner"
+echo "source /workspace/SimpleTuner/.venv/bin/activate"
+echo "bash train.sh"
